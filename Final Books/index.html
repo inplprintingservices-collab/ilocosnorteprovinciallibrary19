@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Book Coverflow</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+<style>
+body{background:#d9d9d9;margin:0;padding:10px 0;}
+.swiper{width:100%;padding-top:10px;padding-bottom:40px;}
+.swiper-slide{width:240px;height:340px;}
+.swiper-slide img{width:100%;height:100%;object-fit:cover;box-shadow:0 12px 25px rgba(0,0,0,.35);}
+</style>
+</head>
+<body>
+<div class="swiper"><div class="swiper-wrapper">
+<div class="swiper-slide"><img src="book1.jpg"></div><div class="swiper-slide"><img src="book2.jpeg"></div><div class="swiper-slide"><img src="book3.jpeg"></div><div class="swiper-slide"><img src="book4.jpeg"></div><div class="swiper-slide"><img src="book5.jpeg"></div><div class="swiper-slide"><img src="book6.jpeg"></div><div class="swiper-slide"><img src="book7.jpeg"></div><div class="swiper-slide"><img src="book8.jpeg"></div><div class="swiper-slide"><img src="book9.jpeg"></div><div class="swiper-slide"><img src="book10.jpg"></div>
+
+</div></div>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script>
+new Swiper('.swiper', {
+effect:'coverflow',
+grabCursor:true,
+centeredSlides:true,
+slidesPerView:'auto',
+loop:true,
+autoplay:{delay:2500},
+coverflowEffect:{rotate:45,stretch:0,depth:180,modifier:1,slideShadows:true}
+});
+</script>
+</body>
+</html>
